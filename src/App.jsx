@@ -27,10 +27,16 @@ function App() {
     <section>
       <div className="w-full bg-gray-600 h-[500px]">
         <h1 className="text-4xl text-white text-center py-10">React Fetch API</h1>
-        <div>
+        <div className='w-full'>
         {allData && allData.map((data, index)=> (
-          <div>
-            <h1 key={index}>You can see the title here:{data.title}</h1>
+          <div className=' w-full flex justify-between items-center gap-5 '>
+            <div className='w-1/2' key={index}>
+            <h1 className='w-[500px] h-auto bg-red-400 px-3 py-3' >You can see the title here:{data.title}</h1>
+            </div>
+          <div className='w-1/2'>
+          <p>Here the body: {data.body}</p>
+          </div>
+      
           </div>
           
         ))
