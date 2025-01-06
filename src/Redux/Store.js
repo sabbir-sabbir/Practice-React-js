@@ -7,4 +7,4 @@ const store = configureStore({
     },          // reducer is an empty object for now
 })
 
-export default store;  // store exported 
+export default store  // store exported 
