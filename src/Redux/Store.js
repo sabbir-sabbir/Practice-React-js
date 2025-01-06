@@ -1,10 +1,9 @@
 import {configureStore} from "@reduxjs/toolkit"      // configureStore imported
+import mycounter from "./CounterSlice"
 
 const store = configureStore({
     reducer: {
-        // Define your reducers here
-        // Example:
-        // counter: counterReducer,
+        counter: mycounter
     },          // reducer is an empty object for now
 })
 
